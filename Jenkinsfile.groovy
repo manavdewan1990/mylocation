@@ -40,7 +40,7 @@ pipeline {
                         [$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'f30ac8b2-6480-49fb-afb3-2feb311a4a75']
                 ]) {
                     sh 'rm -rf node-app-terraform'
-                    sh 'git clone https://github.com/manavdewan1990/node-app-terraform.git'
+                    sh 'git clone https://github.com/manavdewan1990/java-app-terraform.git'
                     sh '''
                cd node-app-terraform
                terraform init -var access_key=${AWS_KEY} -var secret_key=${AWS_SECRET} -backend-config="profile=default"
