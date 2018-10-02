@@ -1,0 +1,7 @@
+---
+- hosts: all
+  vars:
+    springboot_application_name: mylocation
+    springboot_src: /home/ubuntu/node-app/target/mylocation-0.0.1-SNAPSHOT.jar
+  roles:
+    - role: ansible-springboot
