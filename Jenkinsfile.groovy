@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'cloudbees/java-build-tools:latest'
+            image 'manavdewan1990/java-jenkin-builder:latest'
         }
     }
     stages {
